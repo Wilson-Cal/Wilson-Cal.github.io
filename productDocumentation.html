@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Product Documentation Forum</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="responsive.css">
+	<style>
+		input {
+			margin-left: .78em;
+			font-size: 1.3em;
+			border: 1px solid black;
+			border-radius: 4px;
+		}
+		
+		select {
+			margin-left: .7em;
+			font-size: 1.5em;
+			border: 1px solid black;
+			border-radius: 4px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<div class="row">
+		<div class="col-3">
+			<ul class="sidenav">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a class="active" href="productDocumentation.html">Product Documentation</a>
+				</li>
+				<li>
+					<a href="">Product Documentation - Ticket Form</a>
+				</li>
+				<li>
+					<a href="err.html" rel="noopener noreferrer">External Resource Audit</a></li>
+			</ul>
+		</div>
+		<!--                                               -->
+		<!-- ~~~~~~~~~~~~~~~ Main Body ~~~~~~~~~~~~~~~ -->
+		<!--                                               -->
+		<div class="content">
+			<div class="col-9">
+				<form>
+					<h1>Product Documentation</h1>
+					<hr>
+					<h2>General Information</h2>
+					<h3>Product Name:</h3>
+					<input type="text" name="inputBox" id="productName">
+					<h3>Date</h3>
+					<p>Today's date.</p>
+					<input type="date" name="inputBox" id="dateRequested">
+
+					<h3>Administrative User Roles:</h3>
+					<p>List of all users that have administrative or power user rights to this product.</p>
+					<textarea name="textArea" id="adminUserRoles"></textarea>
+
+					<h3>Communication Channels</h3>
+					<p>Check all that apply</p>
+					<input id="checkBox01" type="checkbox" name="cBox01" value="E-Mail">E-Mail<br>
+					<input id="checkBox02" type="checkbox" name="cBox01" value="IT Social Media">IT Social Media<br>
+					<input id="checkBox03" type="checkbox" name="cBox01" value="University Relations">University Relations<br>
+					<input id="checkBox04" type="checkbox" name="cBox01" value="Other">Other<br>
+
+					<h3>BYUI Support Process</h3>
+					<p>BYUI support process in place (BSC, FTC, IT, SME's committed to support, possible others).</p>
+					<input type="radio" class="radioBox" name="input01" value="Yes" id="yes01">Yes
+					<input type="radio" class="radioBox" name="input01" value="No" id="no01">No
+
+					<h3>BYUI Support Process Department</h3>
+					<p>BYUI support process in place (BSC, FTC, IT, SME's committed to support, possible others).</p>
+					<input type="checkbox" name="cBox02" id="checkBox05" value="BYU-Idaho Support Center">BYU-Idaho Support Center<br>
+					<input type="checkbox" name="cBox02" id="checkBox06" value="Course Support(Technical Operations)">Course Support(Technical Operations)<br>
+					<input type="checkbox" name="cBox02" id="checkBox07" value="Faculty Technology Center">Faculty Technology Center<br>
+					<input type="checkbox" name="cBox02" id="checkBox08" value="Information Technology">Information Technology<br>
+					<input type="checkbox" name="cBox02" id="checkBox09" value="Other">Other
+
+					<hr>
+					<h2>Tool Information</h2>
+
+					<h3>Tool Description</h3>
+					<p>Describe the tool and the objective of its use.</p>
+					<textarea name="textArea" id="toolDescription"></textarea>
+
+					<h3>Tool URL</h3>
+					<p>The tool's URL</p>
+					<input type="url" name="inputBox" id="toolURL">
+
+					<h3>Tool Category</h3>
+					<p>Which category does this tool belong in?</p>
+					<input type="checkbox" name="cBox03" id="checkBox10" value="Online">Online
+					<input type="checkbox" name="cBox03" id="checkBox11" value="Campus">Campus
+					<input type="checkbox" name="cBox03" id="checkBox12" value="Administration">Administration
+					<input type="checkbox" name="cBox03" id="checkBox13" value="Other">Other
+
+					<h3>Tool Type</h3>
+					<p>What type of tool is this?</p>
+					<input type="radio" class="radioBox" name="input02" id="radio01" value="Collaborative Tool">Collaborative Tool
+					<input type="radio" class="radioBox" name="input02" id="radio02" value="Document">Document
+					<input type="radio" class="radioBox" name="input02" id="radio03" value="Audio">Audio
+					<input type="radio" class="radioBox" name="input02" id="radio04" value="Video">Video
+					<input type="radio" class="radioBox" name="input02" id="radio05" value="Website">Website
+					<input type="radio" class="radioBox" name="input02" id="radio06" value="Cloud Storage">Cloud Storage
+					<input type="radio" class="radioBox" name="input02" id="radio07" value="Software">Software
+					<input type="radio" class="radioBox" name="input02" id="radio08" value="Other">Other
+
+					<h3>Tool Version</h3>
+					<p>Version Information - Current product version in use.</p>
+					<input type="text" name="inputBox" id="toolVersion">
+
+					<h3>Tool Maintenance Description</h3>
+					<p>Describe tool management requirements. What administration will it require? Who will do the administration? (Faculty, Online Instructor, TA, Online setup team, automated)</p>
+					<textarea name="textArea" id="toolMaintenanceDescription"></textarea>
+
+					<h3>Tool Maintenance Contact</h3>
+					<p>List all individuals that will manage or administrate the tool.</p>
+					<textarea name="textArea" id="toolMaintenanceContact"></textarea>
+
+					<h3>Tool History</h3>
+					<p>Please enter the URL of the history document.</p>
+					<input type="url" name="inputBox" id="toolHistoryURL">
+
+					<h3>Tool Dependencies</h3>
+					<p>What other tools are needed for this tool to run properly. (bridges, API's, LTI, applications, SSO, servers, services, etc.)</p>
+					<input type="checkbox" name="cBox04" id="checkBox14" value="Bridges">Bridges
+					<input type="checkbox" name="cBox04" id="checkBox15" value="API's">API's
+					<input type="checkbox" name="cBox04" id="checkBox17" value="Applications">Applications
+					<input type="checkbox" name="cBox04" id="checkBox18" value="SSO's">SSO's
+					<input type="checkbox" name="cBox04" id="checkBox19" value="Services">Services
+					<input type="checkbox" name="cBox04" id="checkBox20" value="None">None
+					<input type="checkbox" name="cBox04" id="checkBox21" value="Other">Other
+
+					<h3>Tool Use Justification</h3>
+					<p>Justify the use. How it will be used? Why it is being used? What is the instructional objective this tool will assist in solving?Are there other tools like this one and if yes, why was this one chosen over the other(s)? What's its purpose?</p>
+					<textarea name="textArea" id="toolUseJustification"></textarea>
+
+					<h3>ADA Compliance</h3>
+					<p>Is this item ADA Compliant? Does it meet the 504 compliance - statements and certification)</p>
+					<input type="radio" class="radioBox" name="input03" id="radio09" value="ADA Compliant">ADA Compliant
+					<input type="radio" class="radioBox" name="input03" id="radio10" value="504 Compliant">504 Compliant
+					<input type="radio" class="radioBox" name="input03" id="radio11" value="Both">Both
+					<input type="radio" class="radioBox" name="input03" id="radio12" value="None">None
+
+					<h3>ADA Compliance Description</h3>
+					<p>Describe the accessibility requirements for this tool</p>
+					<textarea name="textArea" id="adaComplianceDescription"></textarea>
+
+					<h3>Tool Limitations</h3>
+					<p>List all limitations this tool contains</p>
+					<textarea name="textArea" id="toolLimitations"></textarea>
+
+					<h3>Tool Expected Life</h3>
+					<p>Anticipated tool life in years</p>
+					<input type="radio" class="radioBox" name="input04" id="radio13" value="Less than 1 Year">Less than 1 Year
+					<input type="radio" class="radioBox" name="input04" id="radio14" value="1 to 5 Years">1 to 5 Years
+					<input type="radio" class="radioBox" name="input04" id="radio15" value="5+ Years">5+ Years
+
+					<h3>Semester Setup Requirements</h3>
+					<p>What setup is required each semester? How is it done?</p>
+					<textarea name="textArea" id="semesterSetupRequirements"></textarea>
+
+					<h3>Semester Maintenance Requirements</h3>
+					<p>Define in detial what maintenance is required each semester?(hardware, software, power, user, links, etc.)</p>
+					<textarea name="textArea" id="semesterMaintenanceRequirements"></textarea>
+
+					<h3>Available SSO Methods</h3>
+					<p>List the authentication (SSO) methods supported by this tool (i.e., CAS, LDAP, AD, etc.)</p>
+					<input type="checkbox" name="cBox05" id="checkBox22" value="CAS">CAS
+					<input type="checkbox" name="cBox05" id="checkBox23" value="LDAP">LDAP
+					<input type="checkbox" name="cBox05" id="checkBox24" value="OAUTH 2.0">OAUTH 2.0
+					<input type="checkbox" name="cBox05" id="checkBox25" value="Shibboleth">Shibboleth
+					<input type="checkbox" name="cBox05" id="checkBox26" value="Active Directory">Active Directory
+					<input type="checkbox" name="cBox05" id="checkBox27" value="None">None
+					<input type="checkbox" name="cBox05" id="checkBox28" value="Other">Other
+
+					<h3>Used SSO Methods</h3>
+					<p>Document the SSO method in use.</p>
+					<input type="checkbox" name="cBox06" id="checkBox29" value="CAS">CAS
+					<input type="checkbox" name="cBox06" id="checkBox30" value="LDAP">LDAP
+					<input type="checkbox" name="cBox06" id="checkBox31" value="OAUTH 2.0">OAUTH 2.0
+					<input type="checkbox" name="cBox06" id="checkBox32" value="Shibboleth">Shibboleth
+					<input type="checkbox" name="cBox06" id="checkBox33" value="Active Directory">Active Directory
+					<input type="checkbox" name="cBox06" id="checkBox34" value="None">None
+					<input type="checkbox" name="cBox06" id="checkBox35" value="Other">Other
+
+					<h3>Recovery Point Objective</h3>
+					<p>Disaster Recovery RPO (Recovery Point Objective). How much time is needed to make active again?</p>
+					<input type="radio" class="radioBox" name="input05" id="radio16" value="24 Hours or Less">24 Hours or Less
+					<input type="radio" class="radioBox" name="input05" id="radio17" value="25 to 48 Hours">25 to 48 Hours
+					<input type="radio" class="radioBox" name="input05" id="radio18" value="49 to 72 Hours">48 to 72 Hours
+					<input type="radio" class="radioBox" name="input05" id="radio19" value="More than 72 Hours">More than 72 Hours
+					<input type="radio" class="radioBox" name="input05" id="radio20" value="None">None
+
+					<h3>Recovery Time Objective</h3>
+					<p>Disaster Recovery RTO (Recovery Time Objective)</p>
+					<input type="radio" class="radioBox" name="input06" id="radio21" value="24 Hours or Less">24 Hours or Less
+					<input type="radio" class="radioBox" name="input06" id="radio22" value="25 to 48 Hours">25 to 48 Hours
+					<input type="radio" class="radioBox" name="input06" id="radio23" value="49 to 72 Hours">48 to 72 Hours
+					<input type="radio" class="radioBox" name="input06" id="radio24" value="More than 72 Hours">More than 72 Hours
+					<input type="radio" class="radioBox" name="input06" id="radio25" value="None">None
+
+					<h3>Uptime Guarentee</h3>
+					<p>What is the company's commitment for the Up-time of this item.</p>
+					<input type="radio" class="radioBox" name="input07" id="radio26" value="Above 99.9%">Above 99.9%
+					<input type="radio" class="radioBox" name="input07" id="radio27" value="99.9%">99.9%
+					<input type="radio" class="radioBox" name="input07" id="radio28" value="99.8%">99.8%
+					<input type="radio" class="radioBox" name="input07" id="radio29" value="99.7%">99.7%
+					<input type="radio" class="radioBox" name="input07" id="radio27" value="99.6%">99.6%
+					<input type="radio" class="radioBox" name="input07" id="radio28" value="99.5%">99.5%
+					<input type="radio" class="radioBox" name="input07" id="radio29" value="Less than 99.5%">Less than 99.5%
+					<input type="radio" class="radioBox" name="input07" id="radio30" value="None">None
+
+					<h3>Uptime Reports</h3>
+					<p>How is this up-time reported and how can it be monitored.</p>
+					<input type="checkbox" name="cBox07" id="checkBox36" value="Vendor Reported">Vendor Reported
+					<input type="checkbox" name="cBox07" id="checkBox37" value="BYUI Reported">BYUI Reported
+					<input type="checkbox" name="cBox07" id="checkBox38" value="Other">Other
+
+					<h3>Tool Testing Descirption</h3>
+					<p>Define the type of testing that needs to be done on a schedule (Scheduled Testing) - this could be part of the fire drill.</p>
+					<textarea name="textArea" id="toolTestingDescription"></textarea>
+
+					<h3>Tool Testing Schedule</h3>
+					<p>Define how often testing will occur.</p>
+					<input type="radio" class="radioBox" name="input08" id="radio31" value="Hourly">Hourly
+					<input type="radio" class="radioBox" name="input08" id="radio32" value="Daily">Daily
+					<input type="radio" class="radioBox" name="input08" id="radio33" value="Weekly">Weekly
+					<input type="radio" class="radioBox" name="input08" id="radio34" value="Quarterly">Quarterly
+					<input type="radio" class="radioBox" name="input08" id="radio35" value="Yearly">Yearly
+					<input type="radio" class="radioBox" name="input08" id="radio36" value="None">None
+					<input type="radio" class="radioBox" name="input08" id="radio37" value="Other">Other
+
+					<h3>Tool/Vendor Redundancy</h3>
+					<p>How many data centers does this Tool/Vendor have?</p>
+					<input type="radio" class="radioBox" name="input09" id="radio38" value="1 Data Center">1 Data Center
+					<input type="radio" class="radioBox" name="input09" id="radio39" value="2 Data Centers">2 Data Centers
+					<input type="radio" class="radioBox" name="input09" id="radio40" value="3 or More Data Centers">3 or More Data Centers
+					<input type="radio" class="radioBox" name="input09" id="radio41" value="None">None
+
+					<h3>Tool Performace Rating</h3>
+					<p>Does it have 4 sec/page load times?</p>
+					<input type="radio" class="radioBox" name="input10" id="yes02" value="Yes">Yes
+					<input type="radio" class="radioBox" name="input10" id="no02" value="No">No
+
+					<h3>Tool Branding Capability</h3>
+					<p>Does conform with BYUI standards?(Ability to easily brand to BYUI standards)</p>
+					<input type="radio" class="radioBox" name="input11" id="yes03" value="Yes">Yes
+					<input type="radio" class="radioBox" name="input11" id="no03" value="No">No
+
+					<h3>API Support</h3>
+					<p>Does this item support API's</p>
+					<input type="radio" class="radioBox" name="input12" id="yes04" value="Yes">Yes
+					<input type="radio" class="radioBox" name="input12" id="no04" value="No">No
+
+					<h3>API Support Name</h3>
+					<p>What is the name of the API support</p>
+					<input type="text" name="inputBox" id="apiSupportName">
+
+					<h3>API Support Description</h3>
+					<p>Explain what services are supported</p>
+					<textarea name="textArea" id="apiSupportDescription"></textarea>
+
+					<h3>Tool/Vendor Global Reach</h3>
+					<p>Global Reach - infastructure read for cloud?</p>
+					<input type="radio" class="radioBox" name="input13" id="yes05" value="Yes">Yes
+					<input type="radio" class="radioBox" name="input13" id="no05" value="No">No
+
+					<h3>Tool/Vendor Global Reach Description</h3>
+					<p>Define the tools global reach (what data centers, ...). Is the software ready for the cloud.</p>
+					<textarea name="textArea" id="toolvendorGlobalReachDescription"></textarea>
+
+					<hr>
+					<h2>Organization</h2>
+
+					<h3>Organization</h3>
+					<p>Where is this used?</p>
+					<input type="checkbox" name="cBox08" id="checkBox39" value="BYUI Campus">BYUI Campus
+					<input type="checkbox" name="cBox08" id="checkBox40" value="BYUI Online">BYUI Online
+					<input type="checkbox" name="cBox08" id="checkBox41" value="BYUI IT">BYUI IT
+					<input type="checkbox" name="cBox08" id="checkBox42" value="BYUI Administration">BYUI Administration
+					<input type="checkbox" name="cBox08" id="checkBox43" value="BYUI Pathway">BYUI Pathway
+					<input type="checkbox" name="cBox08" id="checkBox44" value="BYUH Campus">BYUH Campus
+					<input type="checkbox" name="cBox08" id="checkBox45" value="BYUH Administration">BYUH Administration
+					<input type="checkbox" name="cBox08" id="checkBox46" value="LDSBC Campus">LDSBC Campus
+					<input type="checkbox" name="cBox08" id="checkBox47" value="LDSBC Administration">LDSBC Administration
+					<input type="checkbox" name="cBox08" id="checkBox48" value="CES Administration">CES Administration
+					<input type="checkbox" name="cBox08" id="checkBox49" value="Other">Other
+
+					<h3>Owner Type</h3>
+					<p>Owner's Position</p>
+					<input type="radio" class="radioBox" name="input14" id="radio42" value="Vice President">Vice President
+					<input type="radio" class="radioBox" name="input14" id="radio43" value="Associate Vice President">Associate Vice President
+					<input type="radio" class="radioBox" name="input14" id="radio44" value="Dean">Dean
+					<input type="radio" class="radioBox" name="input14" id="radio45" value="Department Chair">Department Chair
+					<input type="radio" class="radioBox" name="input14" id="radio46" value="Managing Director">Managing Director
+					<input type="radio" class="radioBox" name="input14" id="radio47" value="Director">Director
+					<input type="radio" class="radioBox" name="input14" id="radio48" value="Faculty">Faculty
+					<input type="radio" class="radioBox" name="input14" id="radio49" value="Online Curriculum Designer">Online Curriculum Designer
+					<input type="radio" class="radioBox" name="input14" id="radio50" value="Employee">Employee
+					<input type="radio" class="radioBox" name="input14" id="radio51" value="Other">Other
+
+					<h3>Owner - Name</h3>
+					<p>Primary Owner Name</p>
+					<input type="text" name="inputBox" id="ownerName">
+
+					<h3>Owner - Email</h3>
+					<p>Primary Owner Email</p>
+					<input type="email" name="inputBox" id="ownerEmail">
+
+					<h3>Owner - Phone</h3>
+					<p>Primary Owner Email</p>
+					<input type="text" name="inputBox" id="ownerPhone">
+
+					<h3>Colleges</h3>
+					<p>Name all colleges using this technology</p>
+					<input type="checkbox" name="cBox09" id="checkBox50" value="Agriculture and Life Sciences">Agriculture and Life Sciences
+					<input type="checkbox" name="cBox09" id="checkBox51" value="Business and Communication">Business and Communication
+					<input type="checkbox" name="cBox09" id="checkBox52" value="Education and Human Development">Education and Human Development
+					<input type="checkbox" name="cBox09" id="checkBox53" value="Language and Letters">Language and Letters
+					<input type="checkbox" name="cBox09" id="checkBox54" value="Physical Sciences and Engineering">Physical Sciences and Engineering
+					<input type="checkbox" name="cBox09" id="checkBox55" value="Performing and Visual Arts">Performing and Visual Arts
+					<input type="checkbox" name="cBox09" id="checkBox56" value="Foundations and Interdisciplinary Studies">Foundations and Interdisciplinary Studies
+					<input type="checkbox" name="cBox09" id="checkBox57" value="Other">Other
+
+					<h3>Department(s)</h3>
+					<p>Name all departments that are using this technology</p>
+					<input type="checkbox" name="cBox10" id="checkBox58" value="Academic Support Center">Academic Support Centers
+					<input type="checkbox" name="cBox10" id="checkBox59" value="Accounting">Accounting
+					<input type="checkbox" name="cBox10" id="checkBox60" value="Animal and Food Science">Animal and Food Science
+					<input type="checkbox" name="cBox10" id="checkBox61" value="Applied Plant Science">Applied Plant Science
+					<input type="checkbox" name="cBox10" id="checkBox62" value="Art">Art
+					<input type="checkbox" name="cBox10" id="checkBox63" value="Automotive Technology Program">Automotive Technology Program
+					<input type="checkbox" name="cBox10" id="checkBox64" value="Biology">Biology
+					<input type="checkbox" name="cBox10" id="checkBox65" value="Business Management">Business Management
+					<input type="checkbox" name="cBox10" id="checkBox66" value="Chemistry">Chemistry
+					<input type="checkbox" name="cBox10" id="checkBox67" value="Communication">Communication
+					<input type="checkbox" name="cBox10" id="checkBox68" value="Computer Science and Electrical Engineering">Computer Science and Electrical Engineering
+					<input type="checkbox" name="cBox10" id="checkBox69" value="Dance">Dance
+					<input type="checkbox" name="cBox10" id="checkBox70" value="Design and Construction Management">Design and Construction Management
+					<input type="checkbox" name="cBox10" id="checkBox71" value="Economics">Economics
+					<input type="checkbox" name="cBox10" id="checkBox72" value="English">English
+					<input type="checkbox" name="cBox10" id="checkBox73" value="Geology">Geology
+					<input type="checkbox" name="cBox10" id="checkBox74" value="Health, Recreation, and Human Performance">Health, Recreation, and Human Performance
+					<input type="checkbox" name="cBox10" id="checkBox75" value="History, Geography, and Political Science">History, Geography, and Political Science
+					<input type="checkbox" name="cBox10" id="checkBox76" value="Home and Family">Home and Family
+					<input type="checkbox" name="cBox10" id="checkBox77" value="Humanities and Philosophy">Humanities and Philosophy
+					<input type="checkbox" name="cBox10" id="checkBox78" value="Interior Design Program">Interior Design Program
+					<input type="checkbox" name="cBox10" id="checkBox79" value="Languages and International Studies">Languages and International Studies
+					<input type="checkbox" name="cBox10" id="checkBox80" value="Mathematics">Mathematics
+					<input type="checkbox" name="cBox10" id="checkBox81" value="Mechanical Engineering">Mechanical Engineering
+					<input type="checkbox" name="cBox10" id="checkBox82" value="Music">Music
+					<input type="checkbox" name="cBox10" id="checkBox83" value="Nursing">Nursing
+					<input type="checkbox" name="cBox10" id="checkBox84" value="Physics">Physics
+					<input type="checkbox" name="cBox10" id="checkBox85" value="Psychology">Psychology
+					<input type="checkbox" name="cBox10" id="checkBox86" value="Religious Education">Religious Education
+					<input type="checkbox" name="cBox10" id="checkBox87" value="Sociology and Social Work">Sociology and Social Work
+					<input type="checkbox" name="cBox10" id="checkBox88" value="Teacher Education">Teacher Education
+					<input type="checkbox" name="cBox10" id="checkBox89" value="Theatre">Theatre
+					<input type="checkbox" name="cBox10" id="checkBox90" value="Other">Other
+
+					<h3>Budget Purchase Organization</h3>
+					<p>Name the organizational budget this item will be purchased from.</p>
+					<input type="text" name="inputBox" id="budgetPurchaseOrganization">
+
+					<h3>Budget Maintenance Organization</h3>
+					<p>Name the organizational budget this item's maintenance will be coming from.</p>
+					<input type="text" name="inputBox" id="budgetMaintenanceOrganization">
+
+					<hr>
+					<h2>Purchasing Information</h2>
+
+					<h3>BYUI Purchasing Agent Name(Original)</h3>
+					<p>The name of the original BYUI purchasing agent.</p>
+					<input type="text" name="inputBox" id="byuiPurchasingAgentName">
+
+					<h3>BYUI Purchasing Agent Phone(Original)</h3>
+					<p>Phone number of the original BYUI purchasing agent.</p>
+					<input type="text" name="inputBox" id="byuiPurchasingAgentPhone">
+
+					<h3>BYUI Purchasing Agent Email(Original)</h3>
+					<p>Email of the original BYUI purchasing agent.</p>
+					<input type="email" name="inputBox" id="byuiPurchasingAgentEmail">
+
+					<hr>
+					<h2>Vendor Information</h2>
+
+					<h3>Vendor Contact Name(Original)</h3>
+					<p>The original account manager/sales person's name.</p>
+					<input type="text" name="inputBox" id="vendorContactName">
+
+					<h3>Vendor Contact Phone(Original)</h3>
+					<p>The original account manager/sales person's phone number.</p>
+					<input type="text" name="inputBox" id="vendorContactPhone">
+
+					<h3>Vendor Contact Email(Original)</h3>
+					<p>The original account manager/sales person's email.</p>
+					<input type="email" name="inputBox" id="vendorContactEmail">
+
+					<h3>Additional Vendor Contact(s)</h3>
+					<p>List the names, phone numbers, emails, and all other vendor contacts that are important to this tool.</p>
+					<textarea name="textArea" id="additionalVendorContacts"></textarea>
+
+					<h3>Licensing Type</h3>
+					<p>Tool Licensing Type(per user, annual, tier, per credit hour, concurrent user, identified user etc.)</p>
+					<input type="radio" class="radioBox" name="input15" id="radio52" value="Per User">Per User
+					<input type="radio" class="radioBox" name="input15" id="radio53" value="Annual">Annual
+					<input type="radio" class="radioBox" name="input15" id="radio54" value="Tier">Tier
+					<input type="radio" class="radioBox" name="input15" id="radio55" value="Per Credit Hour">Per Credit Hour
+					<input type="radio" class="radioBox" name="input15" id="radio56" value="Concurrent User">Concurrent User
+					<input type="radio" class="radioBox" name="input15" id="radio57" value="Identified User">Identified User
+					<input type="radio" class="radioBox" name="input15" id="radio58" value="Other">Other
+
+					<h3>Initial Setup Fee</h3>
+					<p>Define what the fee is for and the amount of the fee.</p>
+					<textarea name="textArea" id="initialSetupFee"></textarea>
+
+					<h3>Purchase Date</h3>
+					<p>Date the tool was purchased.</p>
+					<input type="date" name="inputBox" id="purchaseDate">
+
+					<h3>Expiration Date</h3>
+					<p>Date the tool expires.</p>
+					<input type="date" name="inputBox" id="expirationDate">
+
+					<h3>Evaluation or Trial Version</h3>
+					<p>Is this an evaluation or trial version?</p>
+					<input type="radio" class="radioBox" name="input16" id="yes06" value="Yes">Yes
+					<input type="radio" class="radioBox" name="input16" id="no06" value="No">No
+
+					<h3>Vendor Legal Statements</h3>
+					<p>Detail the HIPPA, FERPA, privacy statements from the vendor.</p>
+					<textarea name="textArea" id="vendorLegalStatements"></textarea>
+
+					<h3>Vendor ADA Compliance Statement</h3>
+					<p>Provide the vendor's ADA or 504 compliance statement or VPAT form.</p>
+					<textarea name="textArea" id="vendorADAComplianceStatement"></textarea>
+
+					<h3>Up-Time Contract</h3>
+					<p>Is there an up-time guarantee in the contract?</p>
+					<input type="radio" class="radioBox" name="input17" id="yes07" value="Yes">Yes
+					<input type="radio" class="radioBox" name="input17" id="no07" value="No">No
+
+					<hr>
+					<h2>IT Information</h2>
+
+					<h3>Primary IT Stewardship Type</h3>
+					<p>Primary IT stewardship: Product Manager, ASE, Other. This will define IT Contact 1</p>
+					<input type="radio" class="radioBox" name="input18" id="radio59" value="Product Manager">Product Manager
+					<input type="radio" class="radioBox" name="input18" id="radio60" value="Application Systems Engineer">Application Systems Engineer
+					<input type="radio" class="radioBox" name="input18" id="radio61" value="None">None
+					<input type="radio" class="radioBox" name="input18" id="radio62" value="Other">Other
+
+					<h3>Secondary IT Stewardship Type</h3>
+					<p>Secondary IT Stewarship: Product Manager, ASE, Other. This will define IT Contact 2</p>
+					<input type="radio" class="radioBox" name="input19" id="radio63" value="Product Manager">Product Manager
+					<input type="radio" class="radioBox" name="input19" id="radio64" value="Application Systems Engineer">Application Systems Engineer
+					<input type="radio" class="radioBox" name="input19" id="radio65" value="None">None
+					<input type="radio" class="radioBox" name="input19" id="radio66" value="Other">Other
+
+					<h3>Additional IT Contacts</h3>
+					<p>List all personnel from IT who are reponsible for this product.</p>
+					<textarea name="textArea" id="additionalITContacts"></textarea>
+
+					<h3>Estimated Support Time</h3>
+					<p>Estimated support time needed for this item. this will usually come from Project Documentation, Governance Council, or IT Management.</p>
+					<input type="radio" class="radioBox" name="input20" id="radio67" value="0-10 Hours">0-10 Hours
+					<input type="radio" class="radioBox" name="input20" id="radio68" value="11-25 Hours">11-25 Hours
+					<input type="radio" class="radioBox" name="input20" id="radio69" value="26-50 Hours">26-50 Hours
+					<input type="radio" class="radioBox" name="input20" id="radio70" value="51-100 Hours">51-100 Hours
+					<input type="radio" class="radioBox" name="input20" id="radio71" value="101-250 Hours">101-250 Hours
+					<input type="radio" class="radioBox" name="input20" id="radio72" value="251+ Hours">251+ Hours
+
+					<h3>SLA Agreements</h3>
+					<p>Documentation of the SLA agreement(s) for this item. This should come from the Project Documentation, IT Management, and/or Purchasing.</p>
+					<textarea name="textArea" id="slaAgreements"></textarea>
+
+					<h3>BYUI Systems Required</h3>
+					<p>This item needs data from BYUI or other systems. State all systems that data is required from.</p>
+					<input type="checkbox" name="cBox11" id="checkBox91" value="Jenzabar CX">Jenzabar CX
+					<input type="checkbox" name="cBox11" id="checkBox92" value="SIS System">SIS System
+					<input type="checkbox" name="cBox11" id="checkBox93" value="SSO">SSO
+					<input type="checkbox" name="cBox11" id="checkBox94" value="Databases">Databases
+					<input type="checkbox" name="cBox11" id="checkBox95" value="LMS">LMS
+					<input type="checkbox" name="cBox11" id="checkBox96" value="OSM">OSM
+					<input type="checkbox" name="cBox11" id="checkBox97" value="OIMS">OIMS
+					<input type="checkbox" name="cBox11" id="checkBox98" value="OCIS">OCIS
+					<input type="checkbox" name="cBox11" id="checkBox99" value="Active Directory">Active Directory
+					<input type="checkbox" name="cBox11" id="checkBox100" value="Other">Other
+
+					<h3>BYUI Data Required</h3>
+					<p>List all the data that will be transferred to and from the BYUI systems(HIPPA, FERPA, etc.)</p>
+					<input type="checkbox" name="cBox12" id="checkBox101" value="Employee Information">Employee Information
+					<input type="checkbox" name="cBox12" id="checkBox102" value="Student Information">Student Information
+					<input type="checkbox" name="cBox12" id="checkBox103" value="Course Informatino">Course Information
+					<input type="checkbox" name="cBox12" id="checkBox104" value="OL Instructor Information">OL Instructor Information
+					<input type="checkbox" name="cBox12" id="checkBox105" value="Geographical Information">Geographical Information
+					<input type="checkbox" name="cBox12" id="checkBox106" value="Enrollments">Enrollments
+					<input type="checkbox" name="cBox12" id="checkBox107" value="Grades">Grades
+					<input type="checkbox" name="cBox12" id="checkBox108" value="Scores">Scores
+					<input type="checkbox" name="cBox12" id="checkBox109" value="Honor Code/Ethics">Honor Code/Ethics
+					<input type="checkbox" name="cBox12" id="checkBox110" value="HIPPA">HIPPA
+					<input type="checkbox" name="cBox12" id="checkBox111" value="FERPA">FERPA
+					<input type="checkbox" name="cBox12" id="checkBox112" value="Other">Other
+
+					<h3>Required Database Types</h3>
+					<p>List required database(s)(MSSQL, MySQL, ect.)</p>
+					<input type="checkbox" name="cBox13" id="checkBox113" value="MSSQL">MSSQL
+					<input type="checkbox" name="cBox13" id="checkBox114" value="MySQL">MYSQL
+					<input type="checkbox" name="cBox13" id="checkBox115" value="PostGreSQL">PsotGreSQL
+					<input type="checkbox" name="cBox13" id="checkBox116" value="Oracle">Oracle
+					<input type="checkbox" name="cBox13" id="checkBox117" value="Other">Other
+
+					<hr>
+					<h2>Product Management</h2>
+
+					<h3>Product Level Expected(Technology Level)</h3>
+					<p>What level this product should be at</p>
+					<input type="radio" class="radioBox" name="input21" id="radio73" value="Level 3 - Fully Supported">Level 3 - Fully Supported
+					<input type="radio" class="radioBox" name="input21" id="radio74" value="Level 2 - Fully Supported">Level 2 - Fully Supported
+					<input type="radio" class="radioBox" name="input21" id="radio75" value="Level 1 - Partially Supported">Level 1 - Partially Supported
+					<input type="radio" class="radioBox" name="input21" id="radio76" value="Level 0 - No University Support">Level 0 - No University Support
+
+					<h3>Product Level Currently(Technology Level)</h3>
+					<p>What level this product is currently at.</p>
+					<input type="radio" class="radioBox" name="input22" id="radio77" value="Level 3 - Fully Supported">Level 3 - Fully Supported
+					<input type="radio" class="radioBox" name="input22" id="radio78" value="Level 2 - Fully Supported">Level 2 - Fully Supported
+					<input type="radio" class="radioBox" name="input22" id="radio79" value="Level 1 - Partially Supported">Level 1 - Partially Supported
+					<input type="radio" class="radioBox" name="input22" id="radio80" value="Level 0 - No University Support">Level 0 - No University Support
+
+					<hr>
+					<h2>Process</h2>
+
+					<h3>TechOps Team Approval</h3>
+					<p>Does this Product need TechOps approval?</p>
+					<input type="radio" class="radioBox" name="input23" id="yes08" value="Yes">Yes
+					<input type="radio" class="radioBox" name="input23" id="no08" value="No">No
+
+					<h3>Online Instructor Team Approval</h3>
+					<p>Does this product need Online Instructor Team approval?</p>
+					<input type="radio" class="radioBox" name="input24" id="yes09" value="Yes">Yes
+					<input type="radio" class="radioBox" name="input24" id="no09" value="No">No
+
+					<h3>Course Support Team Approval</h3>
+					<p>Does this product need Course Support Team approval</p>
+					<input type="radio" class="radioBox" name="input25" id="yes10" value="Yes">Yes
+					<input type="radio" class="radioBox" name="input25" id="no10" value="No">No
+
+					<h3>License Validation System</h3>
+					<p>License management requirements - Server Manager on Server, or Dongle.</p>
+					<input type="radio" class="radioBox" name="input26" id="radio81" value="Server Manager on Server">Server Manger on Server
+					<input type="radio" class="radioBox" name="input26" id="radio82" value="Dongle">Dongle
+					<input type="radio" class="radioBox" name="input26" id="radio83" value="Designated Users">Designated Users
+
+					<hr>
+				</form>
+				<input type="submit" onclick="submit()" value="Submit">
+				<h3></h3>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-auth.js"></script>
+<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyCDouT2SMthDLhVqly-ZDixdy13YZYJoDs",
+		authDomain: "product-documentation.firebaseapp.com",
+		databaseURL: "https://product-documentation.firebaseio.com",
+		projectId: "product-documentation",
+		storageBucket: "",
+		messagingSenderId: "750322864899"
+	};
+	firebase.initializeApp(config);
+
+</script>
+<script>
+	var database = firebase.database();
+
+	/**************************************************************************
+	 * validateInput()
+	 *
+	 * validates all input from the user. Returns true or false.
+	 ***************************************************************************/
+	function validateInput(checkBox, radioBox, inputBox, textArea) {
+		var status = true;
+		// Input Box Validation
+		for (var i = 0; i < inputBox.length; i++) {
+			if (inputBox[i].value === "") {
+				inputBox[i].focus();
+				status = false;
+				return status;
+			}
+		}
+
+		// Text Area Validation
+		for (var i = 0; i < textArea.length; i++) {
+			if (textArea[i].value === "") {
+				textArea[i].focus();
+				status = false;
+				return status;
+			}
+		}
+
+		// Radio Button Validation
+		var data = []
+		var count = 0;
+		for (var i = 0; i < radioBox.length; i++) {
+			if (radioBox[i].checked) {
+				data[count] = radioBox[i].value;
+				count++;
+			}
+		}
+		if (data.length != 26) {
+			alert("Not all radio button questions have been answered. Please answer each radio button question and try again.")
+			status = false;
+		}
+
+		// Checkbox Validation
+		var count = 0;
+		for (var i = 0; i < checkBox.length; i++) {
+
+			for (var j = 0; j < checkBox[i].length; j++) {
+				if (checkBox[i][j].checked) {
+					count++;
+				}
+			}
+			if (count === 0) {
+				alert("Not all checkbox questions have been answered. Please answer each checkbox question and try again.")
+				status = false;
+				return status;
+			}
+			count = 0;
+		}
+		return status;
+	};
+
+	/**************************************************************************
+	 * writeToFirebase()
+	 *
+	 * Writes all the information to firebase. Returns true or false.
+	 ***************************************************************************/
+	function writeToFirebase(checkBox, radioBox, inputBox, textArea) {
+		try {
+			firebase.database().ref('/ProductDocumentation/' + inputBox[0].toLowerCase()).update({
+				DateCreated: inputBox[1],
+				ToolURL: inputBox[2],
+				ToolVersion: inputBox[3],
+				ToolHistory: inputBox[4],
+				APISupportName: inputBox[5],
+				OwnerName: inputBox[6],
+				OwnerEmail: inputBox[7],
+				OwnerPhone: inputBox[8],
+				BudgetPurchaseOrganization: inputBox[9],
+				BudgetMaintenanceOrganization: inputBox[10],
+				BYUIPurchasingAgentNameOriginal: inputBox[11],
+				BYUIPurchasingAgentPhoneOriginal: inputBox[12],
+				BYUIPurchasingAgentEmailOriginal: inputBox[13],
+				VendorContactNameOriginal: inputBox[14],
+				VendorContactPhoneOriginal: inputBox[15],
+				VendorContactEmailOriginal: inputBox[16],
+				PurchaseDate: inputBox[17],
+				ExpirationDate: inputBox[18],
+				AdministrativeUserRolls: textArea[0],
+				ToolDescription: textArea[1],
+				ToolMaintenanceDescription: textArea[2],
+				ToolMaintenanceContact: textArea[3],
+				ToolUseJustification: textArea[4],
+				ADAComplianceDescription: textArea[5],
+				ToolLimitations: textArea[6],
+				SemesterSetupRequirements: textArea[7],
+				SemesterMaintenanceRequirements: textArea[8],
+				ToolTestingDescription: textArea[9],
+				APISupportDescription: textArea[10],
+				ToolVendorGlobalReachDescription: textArea[11],
+				AdditionalVendorContacts: textArea[12],
+				InitialSetupFee: textArea[13],
+				VendorLegalStatements: textArea[14],
+				VendorADAComplianceStatement: textArea[15],
+				AdditionalITContacts: textArea[16],
+				SLAAgreements: textArea[17],
+				BYUISupportProcess: radioBox[0],
+				ToolType: radioBox[1],
+				ADACompliance: radioBox[2],
+				ToolExpectedLife: radioBox[3],
+				RecoveryPointObjective: radioBox[4],
+				RecoveryTimeObjective: radioBox[5],
+				UptimeGuarentee: radioBox[6],
+				ToolTestingSchedule: radioBox[7],
+				ToolVendorRedundancy: radioBox[8],
+				ToolPerformanceRating: radioBox[9],
+				ToolBrandingCapability: radioBox[10],
+				APISupport: radioBox[11],
+				ToolVendorGlobalReach: radioBox[12],
+				OwnerType: radioBox[13],
+				LicensingType: radioBox[14],
+				EvaluationorTrialVersion: radioBox[15],
+				UpTimeContract: radioBox[16],
+				PrimaryITStewardshipType: radioBox[17],
+				SecondaryITStewardshipType: radioBox[18],
+				EstimatedSupportTime: radioBox[19],
+				ProductLevelExpected: radioBox[20],
+				ProductLevelCurrently: radioBox[21],
+				TechOpsTeamApprovalNeeded: radioBox[22],
+				OnlineInstructorTeamApprovalNeeded: radioBox[23],
+				CourseSupportTeamApprovalNeeded: radioBox[24],
+				LicenseValidationSystem: radioBox[25],
+				CommunicationChannels: checkBox[0],
+				BYUISupportProcessDepartment: checkBox[1],
+				ToolCategory: checkBox[2],
+				ToolDependencies: checkBox[3],
+				AvailableSSOMethods: checkBox[4],
+				UsedSSOMethods: checkBox[5],
+				UptimeReports: checkBox[6],
+				Organization: checkBox[7],
+				Colleges: checkBox[8],
+				Departments: checkBox[9],
+				BYUISystemsRequired: checkBox[10],
+				BYUIDataRequired: checkBox[11],
+				RequiredDatabaseTypes: checkBox[12]
+			});
+			return true;
+		} catch (err) {
+			alert(err);
+			return false;
+		}
+	};
+
+	/**************************************************************************
+	 * getTextValues()
+	 *
+	 * Returns all the values in the form's text fields.
+	 ***************************************************************************/
+	function getTextValues(input) {
+		var data = ["NULL"];
+		for (var i = 0; i < input.length; i++) {
+			data[i] = input[i].value;
+		}
+		return data;
+	};
+
+	/**************************************************************************
+	 * getCheckedValuesRadio()
+	 *
+	 * Returns all the checked values in the form's radio buttons.
+	 ***************************************************************************/
+	function getCheckedValuesRadio(input) {
+		var data = [""];
+		var count = 0;
+		for (var i = 0; i < input.length; i++) {
+			if (input[i].checked) {
+				data[count] = input[i].value;
+				count++;
+			}
+		}
+		return data;
+	};
+
+	/**************************************************************************
+	 * getCheckedValuesCheckBox()
+	 *
+	 * Returns all the checked values in the form's check boxes.
+	 ***************************************************************************/
+	function getCheckedValuesCheckBox(input) {
+		var data = ["", "", "", "", "", "", "", "", "", "", "", "", ""];
+		var commaCount = 0;
+		for (var i = 0; i < input.length; i++) {
+			for (var j = 0; j < input[i].length; j++) {
+				if (input[i][j].checked) {
+					if (commaCount === 0) {
+						data[i] += input[i][j].value.toString();
+						commaCount++;
+					} else {
+						data[i] += ", " + input[i][j].value.toString();
+					}
+
+				}
+			}
+			commaCount = 0;
+		}
+		return data;
+	};
+
+	/**************************************************************************
+	 * submit()
+	 *
+	 * The driver function of the form. It calls the necessary functions to
+	 * retrieve all values, validate input, and write to firebase.
+	 ***************************************************************************/
+	function submit() {
+		var checkBox = [document.getElementsByName("cBox01"), document.getElementsByName("cBox02"),
+			document.getElementsByName("cBox03"), document.getElementsByName("cBox04"),
+			document.getElementsByName("cBox05"), document.getElementsByName("cBox06"),
+			document.getElementsByName("cBox07"), document.getElementsByName("cBox08"),
+			document.getElementsByName("cBox09"), document.getElementsByName("cBox10"),
+			document.getElementsByName("cBox11"), document.getElementsByName("cBox12"),
+			document.getElementsByName("cBox13")
+		];
+		var radioBox = document.getElementsByClassName("radioBox");
+		var inputBox = document.getElementsByName("inputBox");
+		var textArea = document.getElementsByName("textArea");
+		var bool;
+		try {
+			// Validate the user's input
+			if (validateInput(checkBox, radioBox, inputBox, textArea)) {
+				//Now get the values of only checked checkboxes and radio buttons
+				checkBox = getCheckedValuesCheckBox(checkBox);
+				radioBox = getCheckedValuesRadio(radioBox);
+				// Get all the other values. Text fields, dates, email's, and URL's.
+				inputBox = getTextValues(inputBox);
+				textArea = getTextValues(textArea);
+				// If the information Validated, write to Firebase
+				bool = writeToFirebase(checkBox, radioBox, inputBox, textArea);
+				// Else wait for user to make corrections
+			} else {
+				return;
+			}
+			if (bool) {
+				alert(inputBox[0] + " was documented successfully.");
+				if (confirm("Would you like to document another product?")) {
+					window.location.href = 'index.html';
+				} else {
+					window.location.href = 'thankyou.html';
+				}
+
+			} else {
+				alert(inputBox[0] + " failed to document successfully. Please try again.");
+				return;
+			}
+		} catch (err) {
+			alert(err);
+			bool = false;
+		}
+	};
+
+</script>

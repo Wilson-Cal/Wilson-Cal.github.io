@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ERR Forum</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="styles.css">
+	<style>
+		input {
+			margin-left: .78em;
+			font-size: 1.3em;
+			border: 1px solid black;
+			border-radius: 4px;
+		}
+		
+		select {
+			margin-left: .7em;
+			font-size: 1.5em;
+			border: 1px solid black;
+			border-radius: 4px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<p></p>
+	<div class="nav-bar noselect">
+		<div class="nav-menu">
+			<div class="logo">
+				<a href="http://www.byui.edu/" target="_blank" rel="noopener noreferrer"><img alt="BYUI Logo" height="60px" width="93px" src="BYU-Idaho-Text-White.svg" /></a>
+			</div>
+			<div class="line"></div>
+			<div class="title">External Resource Audit</div>
+			<div class="container">
+				<div id="cont_0c7ab06866b9e58d6d5e2b5563633a02">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Form Container -->
+	<p></p>
+	<form>
+		<fh>External Resource Audit</fh>
+		<br><br>
+		<fi>Course:</fi><br>
+		<select id="courseCode">
+			<option value="ACCTG 180">ACCTG 180</option>
+			<option value="ACCTG 201">ACCTG 201</option>
+			<option value="ACCTG 202">ACCTG 202</option>
+			<option value="ACCTG 205">ACCTG 205</option>
+			<option value="AGBUS 105">AGBUS 105</option>
+			<option value="AGBUS 138">AGBUS 138</option>
+			<option value="AGBUS 147">AGBUS 147</option>
+			<option value="AGBUS 180A">AGBUS 180A</option>
+			<option value="AGBUS 180B">AGBUS 180B</option>
+			<option value="ANTH 101">ANTH 101</option>
+			<option value="ART 107">ART 107</option>
+			<option value="ART 110">ART 110</option>
+			<option value="ART 110L">ART 110L</option>
+			<option value="ART 117">ART 117</option>
+			<option value="ART 130">ART 130</option>
+			<option value="ART 160">ART 160</option>
+			<option value="ART 230">ART 230</option>
+			<option value="ART 235">ART 235</option>
+			<option value="ART 331R">ART 331R</option>
+			<option value="ART 337R">ART 337R</option>
+			<option value="AUTO 125">AUTO 125</option>
+			<option value="AUTO 131">AUTO 131</option>
+			<option value="AUTO 132">AUTO 132</option>
+			<option value="AUTO 155">AUTO 155</option>
+			<option value="B 100">B 100</option>
+			<option value="B 101">B 101</option>
+			<option value="B 120">B 120</option>
+			<option value="B 129">B 129</option>
+			<option value="B 183">B 183</option>
+			<option value="B 201">B 201</option>
+			<option value="B 211">B 211</option>
+			<option value="B 212">B 212</option>
+			<option value="B 215">B 215</option>
+			<option value="B 220">B 220</option>
+			<option value="B 240">B 240</option>
+			<option value="B 241">B 241</option>
+			<option value="B 250">B 250</option>
+			<option value="B 275">B 275</option>
+			<option value="B 283">B 283</option>
+			<option value="B 301">B 301</option>
+			<option value="B 320">B 320</option>
+			<option value="B 321">B 321</option>
+			<option value="B 341">B 341</option>
+			<option value="B 351">B 351</option>
+			<option value="B 361">B 361</option>
+			<option value="B 370">B 370</option>
+			<option value="B 374">B 374</option>
+			<option value="B 380">B 380</option>
+			<option value="B 383">B 383</option>
+			<option value="B 398">B 398</option>
+			<option value="B 399">B 399</option>
+			<option value="B 401">B 401</option>
+			<option value="B 410">B 410</option>
+			<option value="B 424">B 424</option>
+			<option value="B 424D">B 424D</option>
+			<option value="B 428">B 428</option>
+			<option value="B 433">B 433</option>
+			<option value="B 448">B 448</option>
+			<option value="B 468">B 468</option>
+			<option value="B 475">B 475</option>
+			<option value="B 483">B 483</option>
+			<option value="B 499A">B 499A</option>
+			<option value="B 499B">B 499B</option>
+			<option value="B 499E">B 499E</option>
+			<option value="BIO 221">BIO 221</option>
+			<option value="BIO 230">BIO 230</option>
+			<option value="BIO 264">BIO 264</option>
+			<option value="BIO 264L">BIO 264L</option>
+			<option value="BIO 265">BIO 265</option>
+			<option value="BIO 265L">BIO 265L</option>
+			<option value="BIO 375">BIO 375</option>
+			<option value="BIO 381">BIO 381</option>
+			<option value="BIO 475">BIO 475</option>
+			<option value="CHEM 101">CHEM 101</option>
+			<option value="CHEM 101L">CHEM 101L</option>
+			<option value="CHILD 210">CHILD 210</option>
+			<option value="CHILD 300">CHILD 300</option>
+			<option value="CHILD 310">CHILD 310</option>
+			<option value="CHILD 320">CHILD 320</option>
+			<option value="CIT 110">CIT 110</option>
+			<option value="CIT 111">CIT 111</option>
+			<option value="CIT 140">CIT 140</option>
+			<option value="CIT 160">CIT 160</option>
+			<option value="CIT 203">CIT 203</option>
+			<option value="CIT 210">CIT 210</option>
+			<option value="CIT 220">CIT 220</option>
+			<option value="CIT 225">CIT 225</option>
+			<option value="CIT 230">CIT 230</option>
+			<option value="CIT 240">CIT 240</option>
+			<option value="CIT 241">CIT 241</option>
+			<option value="CIT 260">CIT 260</option>
+			<option value="CIT 261">CIT 261</option>
+			<option value="CIT 262">CIT 262</option>
+			<option value="CIT 270">CIT 270</option>
+			<option value="CIT 301B">CIT 301B</option>
+			<option value="CIT 301C">CIT 301C</option>
+			<option value="CIT 325">CIT 325</option>
+			<option value="CIT 336">CIT 336</option>
+			<option value="CIT 352">CIT 352</option>
+			<option value="CIT 353">CIT 353</option>
+			<option value="CIT 360">CIT 360</option>
+			<option value="CIT 370">CIT 370</option>
+			<option value="CIT 380">CIT 380</option>
+			<option value="CIT 381">CIT 381</option>
+			<option value="CIT 490">CIT 490</option>
+			<option value="CIT 495">CIT 495</option>
+			<option value="COMM 102">COMM 102</option>
+			<option value="COMM 104">COMM 104</option>
+			<option value="COMM 111">COMM 111</option>
+			<option value="COMM 125">COMM 125</option>
+			<option value="COMM 130">COMM 130</option>
+			<option value="COMM 140">COMM 140</option>
+			<option value="COMM 150">COMM 150</option>
+			<option value="COMM 175">COMM 175</option>
+			<option value="COMM 250">COMM 250</option>
+			<option value="COMM 273">COMM 273</option>
+			<option value="COMM 280">COMM 280</option>
+			<option value="COMM 289">COMM 289</option>
+			<option value="COMM 297R">COMM 297R</option>
+			<option value="COMM 305">COMM 305</option>
+			<option value="COMM 307">COMM 307</option>
+			<option value="COMM 310">COMM 310</option>
+			<option value="COMM 315">COMM 315</option>
+			<option value="COMM 322">COMM 322</option>
+			<option value="COMM 350">COMM 350</option>
+			<option value="COMM 352">COMM 352</option>
+			<option value="COMM 450">COMM 450</option>
+			<option value="COMM 470">COMM 470</option>
+			<option value="COMM 497R">COMM 497R</option>
+			<option value="CONST 320">CONST 320</option>
+			<option value="CONST 380">CONST 380</option>
+			<option value="CS 124">CS 124</option>
+			<option value="CS 165">CS 165</option>
+			<option value="CS 213">CS 213</option>
+			<option value="CS 235">CS 235</option>
+			<option value="CS 246">CS 246</option>
+			<option value="CS 308">CS 308</option>
+			<option value="CS 313">CS 313</option>
+			<option value="CS 364">CS 364</option>
+			<option value="CS 371">CS 371</option>
+			<option value="CS 416">CS 416</option>
+			<option value="CS 432">CS 432</option>
+			<option value="CS 470">CS 470</option>
+			<option value="CS 499">CS 499</option>
+			<option value="CS 499A">CS 499A</option>
+			<option value="CS 499B">CS 499B</option>
+			<option value="ECEN 150">ECEN 150</option>
+			<option value="ECEN 160">ECEN 160</option>
+			<option value="ECEN 250">ECEN 250</option>
+			<option value="ECON 150">ECON 150</option>
+			<option value="ECON 151">ECON 151</option>
+			<option value="ECON 365">ECON 365</option>
+			<option value="ECSE 425">ECSE 425</option>
+			<option value="ED 200">ED 200</option>
+			<option value="ED 202">ED 202</option>
+			<option value="ED 312">ED 312</option>
+			<option value="ED 313">ED 313</option>
+			<option value="EIL 170">EIL 170</option>
+			<option value="EIL 171">EIL 171</option>
+			<option value="EIL 172">EIL 172</option>
+			<option value="ENG 106">ENG 106</option>
+			<option value="ENG 106L">ENG 106L</option>
+			<option value="ENG 107">ENG 107</option>
+			<option value="ENG 110">ENG 110</option>
+			<option value="ENG 251">ENG 251</option>
+			<option value="ENG 252">ENG 252</option>
+			<option value="ENG 314">ENG 314</option>
+			<option value="ENG 325">ENG 325</option>
+			<option value="ENG 332">ENG 332</option>
+			<option value="ENG 335">ENG 335</option>
+			<option value="ENG 355">ENG 355</option>
+			<option value="ENG 450">ENG 450</option>
+			<option value="ESS 375">ESS 375</option>
+			<option value="FA 100">FA 100</option>
+			<option value="FAML 100">FAML 100</option>
+			<option value="FAML 110">FAML 110</option>
+			<option value="FAML 150">FAML 150</option>
+			<option value="FAML 160">FAML 160</option>
+			<option value="FAML 200">FAML 200</option>
+			<option value="FAML 220">FAML 220</option>
+			<option value="FAML 300">FAML 300</option>
+			<option value="FAML 360">FAML 360</option>
+			<option value="FAML 400">FAML 400</option>
+			<option value="FAML 430">FAML 430</option>
+			<option value="FAML 445">FAML 445</option>
+			<option value="FAML 460">FAML 460</option>
+			<option value="FAML 498R">FAML 498R</option>
+			<option value="FCS 101">FCS 101</option>
+			<option value="FCS 207">FCS 207</option>
+			<option value="FCS 340">FCS 340</option>
+			<option value="FDAMF 101">FDAMF 101</option>
+			<option value="FDCA 101">FDCA 101</option>
+			<option value="FDCA 201">FDCA 201</option>
+			<option value="FDCA 202">FDCA 202</option>
+			<option value="FDCA 299">FDCA 299</option>
+			<option value="FDCNC 350">FDCNC 350</option>
+			<option value="FDENG 101">FDENG 101</option>
+			<option value="FDENG 201">FDENG 201</option>
+			<option value="FDENG 301">FDENG 301</option>
+			<option value="FDHUM 101">FDHUM 101</option>
+			<option value="FDHUM 103">FDHUM 103</option>
+			<option value="FDHUM 110">FDHUM 110</option>
+			<option value="FDINT 201">FDINT 201</option>
+			<option value="FDINT 202">FDINT 202</option>
+			<option value="FDINT 211">FDINT 211</option>
+			<option value="FDMAT 108">FDMAT 108</option>
+			<option value="FDMAT 110">FDMAT 110</option>
+			<option value="FDMAT 112">FDMAT 112</option>
+			<option value="FDREL 100">FDREL 100</option>
+			<option value="FDREL 121">FDREL 121</option>
+			<option value="FDREL 122">FDREL 122</option>
+			<option value="FDREL 130">FDREL 130</option>
+			<option value="FDREL 200">FDREL 200</option>
+			<option value="FDREL 211">FDREL 211</option>
+			<option value="FDREL 212">FDREL 212</option>
+			<option value="FDREL 225">FDREL 225</option>
+			<option value="FDREL 250">FDREL 250</option>
+			<option value="FDREL 261">FDREL 261</option>
+			<option value="FDREL 275">FDREL 275</option>
+			<option value="FDREL 301">FDREL 301</option>
+			<option value="FDREL 302">FDREL 302</option>
+			<option value="FDREL 324">FDREL 324</option>
+			<option value="FDREL 325">FDREL 325</option>
+			<option value="FDREL 333">FDREL 333</option>
+			<option value="FDSCI 101">FDSCI 101</option>
+			<option value="FDSCI 201">FDSCI 201</option>
+			<option value="FDSCI 203">FDSCI 203</option>
+			<option value="FDSCI 205">FDSCI 205</option>
+			<option value="FDSCI 209">FDSCI 209</option>
+			<option value="FDWLD 101">FDWLD 101</option>
+			<option value="FDWLD 201">FDWLD 201</option>
+			<option value="FHGEN 111">FHGEN 111</option>
+			<option value="FHGEN 112">FHGEN 112</option>
+			<option value="FHGEN 120">FHGEN 120</option>
+			<option value="FHGEN 130">FHGEN 130</option>
+			<option value="FHGEN 140">FHGEN 140</option>
+			<option value="FHGEN 160">FHGEN 160</option>
+			<option value="FHGEN 211">FHGEN 211</option>
+			<option value="FHGEN 212">FHGEN 212</option>
+			<option value="FHGEN 251A">FHGEN 251A</option>
+			<option value="FHGEN 251B">FHGEN 251B</option>
+			<option value="FHGEN 251C">FHGEN 251C</option>
+			<option value="FHGEN 251D">FHGEN 251D</option>
+			<option value="FHGEN 252A">FHGEN 252A</option>
+			<option value="FHGEN 252B">FHGEN 252B</option>
+			<option value="FHGEN 252C">FHGEN 252C</option>
+			<option value="FHGEN 252D">FHGEN 252D</option>
+			<option value="FHGEN 270">FHGEN 270</option>
+			<option value="FHGEN 399">FHGEN 399</option>
+			<option value="GEOL 111">GEOL 111</option>
+			<option value="GEOL 141">GEOL 141</option>
+			<option value="GER 101">GER 101</option>
+			<option value="GS 100">GS 100</option>
+			<option value="GS 101">GS 101</option>
+			<option value="GS 103A">GS 103A</option>
+			<option value="GS 103B">GS 103B</option>
+			<option value="GS 103C">GS 103C</option>
+			<option value="GS 103D">GS 103D</option>
+			<option value="GS 103E">GS 103E</option>
+			<option value="GS 103F">GS 103F</option>
+			<option value="GS 105">GS 105</option>
+			<option value="GS 107">GS 107</option>
+			<option value="GS 111">GS 111</option>
+			<option value="GS 120">GS 120</option>
+			<option value="GS 120L">GS 120L</option>
+			<option value="GS 294">GS 294</option>
+			<option value="HFED 101">HFED 101</option>
+			<option value="HRHP 131">HRHP 131</option>
+			<option value="HS 240">HS 240</option>
+			<option value="HS 280">HS 280</option>
+			<option value="HS 285">HS 285</option>
+			<option value="HS 310">HS 310</option>
+			<option value="HS 320">HS 320</option>
+			<option value="HS 340">HS 340</option>
+			<option value="HS 345">HS 345</option>
+			<option value="HS 370">HS 370</option>
+			<option value="HS 378">HS 378</option>
+			<option value="HS 384">HS 384</option>
+			<option value="HS 390">HS 390</option>
+			<option value="HS 391">HS 391</option>
+			<option value="HS 401">HS 401</option>
+			<option value="HS 420">HS 420</option>
+			<option value="HS 425">HS 425</option>
+			<option value="HS 460">HS 460</option>
+			<option value="HS 465">HS 465</option>
+			<option value="HS 472">HS 472</option>
+			<option value="HS 480">HS 480</option>
+			<option value="HS 484">HS 484</option>
+			<option value="LANG 321">LANG 321</option>
+			<option value="LANG 410">LANG 410</option>
+			<option value="LR 111">LR 111</option>
+			<option value="MA 105">MA 105</option>
+			<option value="MA 106">MA 106</option>
+			<option value="MA 107">MA 107</option>
+			<option value="MA 111">MA 111</option>
+			<option value="MA 205">MA 205</option>
+			<option value="MATH 100B">MATH 100B</option>
+			<option value="MATH 100G">MATH 100G</option>
+			<option value="MATH 100L">MATH 100L</option>
+			<option value="MATH 109">MATH 109</option>
+			<option value="MATH 111">MATH 111</option>
+			<option value="MATH 215">MATH 215</option>
+			<option value="MATH 221A">MATH 221A</option>
+			<option value="MATH 221B">MATH 221B</option>
+			<option value="MATH 221C">MATH 221C</option>
+			<option value="ME 172">ME 172</option>
+			<option value="ME 201">ME 201</option>
+			<option value="ME 202">ME 202</option>
+			<option value="ME 204">ME 204</option>
+			<option value="ME 210">ME 210</option>
+			<option value="ME 231">ME 231</option>
+			<option value="ME 272">ME 272</option>
+			<option value="ME 305">ME 305</option>
+			<option value="NURS 316">NURS 316</option>
+			<option value="NURS 327">NURS 327</option>
+			<option value="NURS 338">NURS 338</option>
+			<option value="NURS 340">NURS 340</option>
+			<option value="NURS 400">NURS 400</option>
+			<option value="NURS 449">NURS 449</option>
+			<option value="NURS 450">NURS 450</option>
+			<option value="NUTR 112">NUTR 112</option>
+			<option value="NUTR 150">NUTR 150</option>
+			<option value="NUTR 200">NUTR 200</option>
+			<option value="PH 105">PH 105</option>
+			<option value="PH 121">PH 121</option>
+			<option value="PH 223">PH 223</option>
+			<option value="PHIL 110">PHIL 110</option>
+			<option value="POLSC 110">POLSC 110</option>
+			<option value="POLSC 150">POLSC 150</option>
+			<option value="POLSC 170">POLSC 170</option>
+			<option value="PSYCH 111">PSYCH 111</option>
+			<option value="PSYCH 112">PSYCH 112</option>
+			<option value="PSYCH 201">PSYCH 201</option>
+			<option value="PSYCH 302">PSYCH 302</option>
+			<option value="PSYCH 311">PSYCH 311</option>
+			<option value="RM 304">RM 304</option>
+			<option value="RM 307">RM 307</option>
+			<option value="RM 342">RM 342</option>
+			<option value="RM 370">RM 370</option>
+			<option value="RM 371">RM 371</option>
+			<option value="RM 373R">RM 373R</option>
+			<option value="RM 471">RM 471</option>
+			<option value="RM 472">RM 472</option>
+			<option value="RM 473">RM 473</option>
+			<option value="SOC 111">SOC 111</option>
+			<option value="SOC 112">SOC 112</option>
+			<option value="SOC 311">SOC 311</option>
+			<option value="SOC 323">SOC 323</option>
+			<option value="SOC 383">SOC 383</option>
+			<option value="SPAN 101">SPAN 101</option>
+			<option value="SPAN 102">SPAN 102</option>
+			<option value="SPAN 302">SPAN 302</option>
+			<option value="SPED 200">SPED 200</option>
+			<option value="SPED 310">SPED 310</option>
+			<option value="SPED 441">SPED 441</option>
+			<option value="SW 260">SW 260</option>
+			<option value="TA 115">TA 115</option>
+			<option value="TA 116">TA 116</option>
+			<option value="TA 401">TA 401</option>
+			<option value="TA 402">TA 402</option>
+			<option value="TESOL 101">TESOL 101</option>
+			<option value="TESOL 102">TESOL 102</option>
+			<option value="TESOL 103">TESOL 103</option>
+			<option value="TESOL 104">TESOL 104</option>
+			<option value="TESOL 105">TESOL 105</option>
+			<option value="TESOL 200">TESOL 200</option>
+			<option value="TESOL 377">TESOL 377</option>
+			<option value="TESOL 378">TESOL 378</option>
+			<option value="WDD 100">WDD 100</option>
+			<option value="Other">Other</option>
+		</select>
+		<br><br>
+		<fi>Department:</fi><br>
+		<select id="department">
+			<option  value="Academic Support Center">Academic Support Centers</option>
+			<option  value="Accounting">Accounting</option>
+			<option  value="Animal and Food Science">Animal and Food Science</option>
+			<option  value="Applied Plant Science">Applied Plant Science</option>
+			<option  value="Art">Art</option>
+			<option  value="Automotive Technology Program">Automotive Technology Program</option>
+			<option  value="Biology">Biology</option>
+			<option  value="Business Management">Business Management</option>
+			<option  value="Chemistry">Chemistry</option>
+			<option  value="Communication">Communication</option>
+			<option  value="Computer Science and Electrical Engineering">Computer Science and Electrical Engineering</option>
+			<option  value="Dance">Dance</option>
+			<option  value="Design and Construction Management">Design and Construction Management</option>
+			<option  value="Economics">Economics</option>
+			<option  value="English">English</option>
+			<option  value="Geology">Geology</option>
+			<option  value="Health, Recreation, and Human Performance">Health, Recreation, and Human Performance</option>
+			<option  value="History, Geography, and Political Science">History, Geography, and Political Science</option>
+			<option  value="Home and Family">Home and Family</option>
+			<option  value="Humanities and Philosophy">Humanities and Philosophy</option>
+			<option  value="Interior Design Program">Interior Design Program</option>
+			<option  value="Languages and International Studies">Languages and International Studies</option>
+			<option  value="Mathematics">Mathematics</option>
+			<option  value="Mechanical Engineering">Mechanical Engineering</option>
+			<option  value="Music">Music</option>
+			<option  value="Nursing">Nursing</option>
+			<option  value="Physics">Physics</option>
+			<option  value="Psychology">Psychology</option>
+			<option  value="Religious Education">Religious Education</option>
+			<option  value="Sociology and Social Work">Sociology and Social Work</option>
+			<option  value="Teacher Education">Teacher Education</option>
+			<option  value="Theatre">Theatre</option>
+			<option  value="Other">Other</option>
+		</select>
+		<br><br>
+		<fi>Colleges:</fi><br>
+		<select id="colleges">
+			<option value="Agriculture and Life Sciences">Agriculture and Life Sciences</option>
+			<option value="Business and Communication">Business and Communication</option>
+			<option value="Education and Human Development">Education and Human Development</option>
+			<option value="Language and Letters">Language and Letters</option>
+			<option value="Physical Sciences and Engineering">Physical Sciences and Engineering</option>
+			<option value="Performing and Visual Arts">Performing and Visual Arts</option>
+			<option value="Foundations and Interdisciplinary Studies">Foundations and Interdisciplinary Studies</option>
+			<option value="Other">Other</option>
+		</select>
+		<br><br>
+		<fi>What Lesson / Week / Module is this technology in?</fi><br>
+		<input type="radio" class="radioBox" name="input00" id="radio00" value="Welcome">Welcome<br>
+		<input type="radio" class="radioBox" name="input00" id="radio01" value="Instructor Resources">Intructoor Resources<br>
+		<input type="radio" class="radioBox" name="input00" id="radio02" value="01">01<br>
+		<input type="radio" class="radioBox" name="input00" id="radio03" value="02">02<br>
+		<input type="radio" class="radioBox" name="input00" id="radio04" value="03">03<br>
+		<input type="radio" class="radioBox" name="input00" id="radio05" value="04">04<br>
+		<input type="radio" class="radioBox" name="input00" id="radio06" value="05">05<br>
+		<input type="radio" class="radioBox" name="input00" id="radio07" value="06">06<br>
+		<input type="radio" class="radioBox" name="input00" id="radio08" value="07">07<br>
+		<input type="radio" class="radioBox" name="input00" id="radio09" value="08">08<br>
+		<input type="radio" class="radioBox" name="input00" id="radio10" value="09">09<br>
+		<input type="radio" class="radioBox" name="input00" id="radio11" value="10">10<br>
+		<input type="radio" class="radioBox" name="input00" id="radio12" value="11">11<br>
+		<input type="radio" class="radioBox" name="input00" id="radio13" value="12">12<br>
+		<input type="radio" class="radioBox" name="input00" id="radio14" value="13">13<br>
+		<input type="radio" class="radioBox" name="input00" id="radio15" value="14">14<br>
+		<input type="radio" class="radioBox" name="input00" id="radio16" value="Resources">Resources<br>
+		<br>
+		<fi>Enter Technology Name:</fi><br>
+		<input type="text" id="technologyName"><br>
+		<br>
+		<fi>Verify Technology Description Exists: <a href="https://docs.google.com/spreadsheets/d/1cSZboPz2rtwi8SJRge36gDLY6OKRjZQN2L-Mb49Xvuc/edit?usp=sharing" target="_blank">"Technology Info"</a></fi><br>
+		<input type="radio" class="radioBox" name="input01" id="radio17" value="Exists">Exists<br>
+		<textarea placeholder="Only type here if the description does not already exist."></textarea>
+		<br><br>
+		<fi>How/Reason technology is used:</fi><br>
+		<input type="checkbox" name="cBox00" id="checkBox00" value="Document">Document<br>
+		<input type="checkbox" name="cBox01" id="checkBox01" value="Audio">Audio<br>
+		<input type="checkbox" name="cBox02" id="checkBox02" value="Video">Video<br>
+		<input type="checkbox" name="cBox03" id="checkBox03" value="Website">Website<br>
+		<input type="checkbox" name="cBox04" id="checkBox04" value="Collaboration Tool">Collaboration Tool<br>
+		<input type="checkbox" name="cBox05" id="checkBox05" value="Cloud / Web Storage">Cloud / Web Storage<br>
+		<input type="checkbox" name="cBox06" id="checkBox06" value="Download">Download<br>
+		<input type="checkbox" name="cBox07" id="checkBox07" value="Other">Other<br>
+		<br>
+		<fi>Where is this Technology Located?</fi><br>
+		<!-- This area needs to be fleshed out -->
+		<input type="radio" class="radioBox" name="input 01" id="radio17" value="Storage(Brightspace, Equella, Kaltura, OneDrive, GoogleDrive, Jing, Client)">Storage(Brightspace, Equella, Kaltura, OneDrive, GoogleDrive, Jing, Client)<br>
+		<input type="radio" class="radioBox" name="input 01" id="radio18" value="Website(BYUI, BYUI-Library, BYU, Church, Equella)">Website(BYUI, BYUI-Library, BYU, Church, Equella)<br>
+		<input type="radio" class="radioBox" name="input 01" id="radio19" value="Video(Kaltura, Equella, Brightspace, YouTube, Church, BYU)">Video(Kaltura, Equella, Brightspace, YouTube, Church, BYU)<br>
+		<input type="radio" class="radioBox" name="input 01" id="radio20" value="Other Websites(Content stored on company site - URL)">Other Websites(Content stored on company site - URL)<br>
+		<input type="radio" class="radioBox" name="input 01" id="radio21" value="WordPress(URL)">WordPress(URL)<br>
+		<input type="radio" class="radioBox" name="input 01" id="radio21" value="Other">Other<br>
+		<br>
+		<fi>Extra Cost to the Student?</fi><br>
+		<input type="radio" name="input02">Yes (enter amount)<input type="text" id="extraCostToTheStudent"><br>
+		<input type="radio" class="radioBox" name="input02" id="radio22" value="No">No<br>
+
+
+
+	</form>
+</body>
+
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-auth.js"></script>
+<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyCDouT2SMthDLhVqly-ZDixdy13YZYJoDs",
+		authDomain: "product-documentation.firebaseapp.com",
+		databaseURL: "https://product-documentation.firebaseio.com",
+		projectId: "product-documentation",
+		storageBucket: "",
+		messagingSenderId: "750322864899"
+	};
+	firebase.initializeApp(config);
+
+</script>
+<script>
+	var database = firebase.database();
+
+	/**************************************************************************
+	 * validateInput()
+	 *
+	 * validates all input from the user. Returns true or false.
+	 ***************************************************************************/
+	function validateInput(checkBox, radioBox, inputBox, textArea) {
+
+	}
+
+	/**************************************************************************
+	 * writeToFirebase()
+	 *
+	 * Writes all the information to firebase. Returns true or false.
+	 ***************************************************************************/
+	function writeToFirebase(checkBox, radioBox, inputBox, textArea) {
+		try {
+			firebase.database().ref('/ProductDocumentation/' + inputBox[0].toLowerCase()).update({
+				DateCreated: inputBox[1],
+				ToolURL: inputBox[2],
+				ToolVersion: inputBox[3],
+				ToolHistory: inputBox[4],
+				APISupportName: inputBox[5],
+				OwnerName: inputBox[6],
+				OwnerEmail: inputBox[7],
+				OwnerPhone: inputBox[8],
+				BudgetPurchaseOrganization: inputBox[9],
+				BudgetMaintenanceOrganization: inputBox[10],
+				BYUIPurchasingAgentNameOriginal: inputBox[11],
+				BYUIPurchasingAgentPhoneOriginal: inputBox[12],
+				BYUIPurchasingAgentEmailOriginal: inputBox[13],
+				VendorContactNameOriginal: inputBox[14],
+				VendorContactPhoneOriginal: inputBox[15],
+				VendorContactEmailOriginal: inputBox[16],
+				PurchaseDate: inputBox[17],
+				ExpirationDate: inputBox[18],
+				AdministrativeUserRolls: textArea[0],
+				ToolDescription: textArea[1],
+				ToolMaintenanceDescription: textArea[2],
+				ToolMaintenanceContact: textArea[3],
+				ToolUseJustification: textArea[4],
+				ADAComplianceDescription: textArea[5],
+				ToolLimitations: textArea[6],
+				SemesterSetupRequirements: textArea[7],
+				SemesterMaintenanceRequirements: textArea[8],
+				ToolTestingDescription: textArea[9],
+				APISupportDescription: textArea[10],
+				ToolVendorGlobalReachDescription: textArea[11],
+				AdditionalVendorContacts: textArea[12],
+				InitialSetupFee: textArea[13],
+				VendorLegalStatements: textArea[14],
+				VendorADAComplianceStatement: textArea[15],
+				AdditionalITContacts: textArea[16],
+				SLAAgreements: textArea[17],
+				BYUISupportProcess: radioBox[0],
+				ToolType: radioBox[1],
+				ADACompliance: radioBox[2],
+				ToolExpectedLife: radioBox[3],
+				RecoveryPointObjective: radioBox[4],
+				RecoveryTimeObjective: radioBox[5],
+				UptimeGuarentee: radioBox[6],
+				ToolTestingSchedule: radioBox[7],
+				ToolVendorRedundancy: radioBox[8],
+				ToolPerformanceRating: radioBox[9],
+				ToolBrandingCapability: radioBox[10],
+				APISupport: radioBox[11],
+				ToolVendorGlobalReach: radioBox[12],
+				OwnerType: radioBox[13],
+				LicensingType: radioBox[14],
+				EvaluationorTrialVersion: radioBox[15],
+				UpTimeContract: radioBox[16],
+				PrimaryITStewardshipType: radioBox[17],
+				SecondaryITStewardshipType: radioBox[18],
+				EstimatedSupportTime: radioBox[19],
+				ProductLevelExpected: radioBox[20],
+				ProductLevelCurrently: radioBox[21],
+				TechOpsTeamApprovalNeeded: radioBox[22],
+				OnlineInstructorTeamApprovalNeeded: radioBox[23],
+				CourseSupportTeamApprovalNeeded: radioBox[24],
+				LicenseValidationSystem: radioBox[25],
+				CommunicationChannels: checkBox[0],
+				BYUISupportProcessDepartment: checkBox[1],
+				ToolCategory: checkBox[2],
+				ToolDependencies: checkBox[3],
+				AvailableSSOMethods: checkBox[4],
+				UsedSSOMethods: checkBox[5],
+				UptimeReports: checkBox[6],
+				Organization: checkBox[7],
+				Colleges: checkBox[8],
+				Departments: checkBox[9],
+				BYUISystemsRequired: checkBox[10],
+				BYUIDataRequired: checkBox[11],
+				RequiredDatabaseTypes: checkBox[12]
+			});
+			return true;
+		} catch (err) {
+			return false;
+		}
+	};
+
+	function getTextValues(input) {
+		var data = ["NULL"];
+		for (var i = 0; i < input.length; i++) {
+			data[i] = input[i].value;
+		}
+		return data;
+	};
+
+	function getCheckedValuesRadio(input) {
+		var data = [""];
+		var count = 0;
+		for (var i = 0; i < input.length; i++) {
+			if (input[i].checked) {
+				data[count] = input[i].value;
+				count++;
+			}
+		}
+		return data;
+	};
+
+	function getCheckedValuesCheckBox(input) {
+		var data = ["", "", "", "", "", "", "", "", "", "", "", "", ""];
+		var commaCount = 0;
+		for (var i = 0; i < input.length; i++) {
+			for (var j = 0; j < input[i].length; j++) {
+				if (input[i][j].checked) {
+					if (commaCount === 0) {
+						data[i] += input[i][j].value.toString();
+						commaCount++;
+					} else {
+						data[i] += ", " + input[i][j].value.toString();
+					}
+
+				}
+			}
+			commaCount = 0;
+		}
+		return data;
+	};
+
+	function submit() {
+		var checkBox = [document.getElementsByName("cBox01"), document.getElementsByName("cBox02"),
+			document.getElementsByName("cBox03"), document.getElementsByName("cBox04"),
+			document.getElementsByName("cBox05"), document.getElementsByName("cBox06"),
+			document.getElementsByName("cBox07"), document.getElementsByName("cBox08"),
+			document.getElementsByName("cBox09"), document.getElementsByName("cBox10"),
+			document.getElementsByName("cBox11"), document.getElementsByName("cBox12"),
+			document.getElementsByName("cBox13")
+		];
+		var radioBox = document.getElementsByClassName("radioBox");
+		var inputBox = document.getElementsByName("inputBox");
+		var textArea = document.getElementsByName("textArea");
+		//Now get the values of only checked checkboxes and radio buttons
+		checkBox = getCheckedValuesCheckBox(checkBox);
+		radioBox = getCheckedValuesRadio(radioBox);
+		//Now get all the other values. Text fields, dates, email's, and URL's.
+		inputBox = getTextValues(inputBox);
+		textArea = getTextValues(textArea);
+		//Now validate the user input
+		//if(validateInput(checkBox, radioBox, inputBox, textArea)){}
+		//If the information Validated, write to Firebase
+		writeToFirebase(checkBox, radioBox, inputBox, textArea);
+		//Else wait for user to make corrections
+	};
+
+</script>
