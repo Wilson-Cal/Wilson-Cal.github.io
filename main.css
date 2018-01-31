@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    max-width: 100%;
+}
+
+div.content {
+    padding: 45px 10px;
+    height: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.unl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2e2e2d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logOut {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.logOut:hover {
+    background-color: #111;
+    cursor: pointer;
+}
+
+h1 {
+    color: orange;
+}
+
+
+.lia {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#active {
+    background-color: #0066b5;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .unl {
+        width: 100%;
+        height: auto;
+        position: fixed;
+    }
+    .lia {
+        float: left;
+        padding: 15px;
+        text-align: center;
+    }
+    div.content {
+        padding-top: 100px;
+        margin-left: 0;
+    }
+    [class*="col-"] {
+        width: 100%;
+        text-align: center;
+    }
+    #signUpContainer {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .unl {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .lia {
+        font-size: 15px;
+        text-align: center;
+        float: none;
+    }
+    .logOut {
+        font-size: 15px;
+        text-align: center;
+        float: none;
+    }
+    div.content {
+        margin-left: 0;
+        padding-top: 25px;
+        text-align: center;
+    }
+    input[type=checkbox] {
+        display:
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex {
+        margin-bottom: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    #signUpContainer {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
