@@ -130,7 +130,6 @@ textarea {
 }
 
 .flex-container {
-    margin-top: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -148,16 +147,17 @@ textarea {
 
 .flex-container>a>div {
     background-color: #0076B6;
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     margin: 25px;
     text-align: center;
     font-size: 25px;
 }
 
 .flex-container>a>div>p {
-    padding-top: 60px;
-    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 125px;
 }
 
 @media screen and (max-width: 1500px) {

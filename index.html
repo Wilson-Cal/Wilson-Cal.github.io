@@ -4,15 +4,41 @@
 <head>
     <title>Cal Wilson's Professional Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
+    <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+        <div class="flex-container">
+            <a href="">
+                <div>
+                    <p>Home</p>
+                </div>
+            </a>
+            <a href="html/aboutMe.html">
+                <div>
+                    <p>About Me</p>
+                </div>
+            </a>
+            <a href="html/myWork.html">
+                <div>
+                    <p>My Work</p>
+                </div>
+            </a>
+            <a href="html/contactMe.html">
+                <div>
+                    <p>Contact Me</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+    <button class="w3-button w3-xlarge" onclick="w3_open()">☰</button>
     <div class="container">
         <h1>Cal Wilson - A Professional Portfolio</h1>
         <hr>
-
         <div class="flex-container">
             <a href="html/aboutMe.html">
                 <div>
@@ -38,6 +64,7 @@
             <a href="mailto:wil13034@byui.edu">wil13034@byui.edu</a>
         </p>
     </footer>
+    <script src='js/main.js'></script>;
 </body>
 
 </html>
