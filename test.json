@@ -2,8 +2,10 @@
     "$jason": {
         "head": {
             "title": "Test",
-            "navigate": {
-                "type": "$default"
+            "actions": {
+                "navigate": {
+                    "type": "$default"
+                }
             }
         },
         "body": {
