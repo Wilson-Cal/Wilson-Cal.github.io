@@ -1,5 +1,8 @@
 {
     "$jason": {
+        "head": {
+            "title": "Test"
+        },
         "body": {
             "header": {
                 "title": {
@@ -13,7 +16,7 @@
                 "action": {
                     "trigger": "navigate"
                 }
-            },
+            }
         }
     }
 }
