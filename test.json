@@ -17,7 +17,7 @@
             },
             "background": {
                 "type": "html",
-                "url": "https://github.com/Wilson-Cal",
+                "url": "https://wilson-cal.github.io/",
                 "action": {
                     "trigger": "navigate"
                 }
