@@ -12,7 +12,7 @@
             },
             "background": {
                 "type": "html",
-                "url": "https://www.google.com",
+                "url": "https://wilson-cal.github.io/",
                 "action": {
                     "trigger": "navigate"
                 }
