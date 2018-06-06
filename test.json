@@ -1,7 +1,10 @@
 {
     "$jason": {
         "head": {
-            "title": "Test"
+            "title": "Test",
+            "navigate": {
+                "type": "$default"
+            }
         },
         "body": {
             "header": {
