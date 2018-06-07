@@ -65,6 +65,7 @@ textarea {
 .container {
     max-width: 750px;
     margin: auto;
+    padding-top: 50px;
 }
 
 .center {
