@@ -1,10 +1,10 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import Button from '@material-ui/core/Button';
 
 function App() {
   return (
     <>
-      <CssBaseline />
+      <Button color="primary">Theme Baby</Button>
       <h1>Hello World!</h1>
       <h2>Test</h2>
     </>
